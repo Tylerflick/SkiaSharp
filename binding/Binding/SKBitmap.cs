@@ -463,6 +463,11 @@ namespace SkiaSharp
 			}
 		}
 
+		public bool Resize(SKBitmap destination, SKResizeMode mode)
+		{
+			return SkiaApi.sk_bitmap_resize(destination.Handle, Handle, ref mode);
+		}
+
 		// internal proxy
 		#if __IOS__
 		[ObjCRuntime.MonoPInvokeCallback (typeof (SKBitmapReleaseDelegateInternal))]
