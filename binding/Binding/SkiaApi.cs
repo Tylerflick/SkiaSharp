@@ -1129,7 +1129,7 @@ namespace SkiaSharp
 		public extern static void sk_bitmap_set_pixels(sk_bitmap_t cbitmap, IntPtr pixels, sk_colortable_t ctable);
 		[DllImport(SKIA, CallingConvention = CallingConvention.Cdecl)]
 		[return: MarshalAs(UnmanagedType.I1)]
-		public extern static bool sk_bitmap_resize(sk_bitmap_t cbitmap_dst, sk_bitmap_t cbitmap_src, ref SKResizeMode mode);
+		public extern static bool sk_bitmap_resize(sk_bitmap_t cbitmap_dst, sk_bitmap_t cbitmap_src, SKResizeMode mode);
 
 		// Matrix
 

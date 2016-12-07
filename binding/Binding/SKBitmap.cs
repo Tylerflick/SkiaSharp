@@ -465,7 +465,7 @@ namespace SkiaSharp
 
 		public bool Resize(SKBitmap destination, SKResizeMode mode)
 		{
-			return SkiaApi.sk_bitmap_resize(destination.Handle, Handle, ref mode);
+			return SkiaApi.sk_bitmap_resize(destination.Handle, Handle, mode);
 		}
 
 		// internal proxy
